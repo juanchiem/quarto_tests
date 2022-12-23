@@ -1,0 +1,19 @@
+project: 
+  type: website
+  output-dir: docs
+
+execute: 
+  echo: false
+  warning: false
+  message: false
+  
+website: 
+  site-url: "https://juanchiem.github.io/quarto_tests/index.html" 
+  repo-url: https://github.com/juanchiem/quarto_tests 
+  repo-actions: [edit, issue]
+
+
+format:
+  html:
+    theme: bootstrap
+    toc: true

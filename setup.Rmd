@@ -1,0 +1,39 @@
+```{r paquetes, echo=FALSE, warning = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+pacman::p_load(tidyverse)
+conflicted::conflict_prefer("filter", "dplyr")
+conflicted::conflict_prefer("select", "dplyr")
+```
+
+```{r publish}
+# para publicar en github: 
+
+# windows users
+# copy NUL .nojekyll 
+
+# linux users
+# touch .nojekyll
+
+# en github:
+# Before attempting to publish you should ensure that the Source branch for your repository is gh-pages and that the site directory is set to the repository root (/). You can modify these options in Settings : Pages for your repository.
+```
+
+```{r themes}
+theme1 <- theme_bw(12) + 
+  theme(
+        panel.grid.minor.x = element_blank(), 
+        panel.grid.minor.y = element_blank(), 
+        plot.background = element_rect(fill = "gray90"))
+```
+
+```{r data import, eval=FALSE}
+# esto se hace de manera interactiva cada vez que sea necesario actualizar el dataset
+dat <- read.csv("https://raw.githubusercontent.com/juanchiem/agro_data/master/tandil_serie71-20.csv", sep = ",") %>% 
+  slice(1:20)
+dat$date <- as.Date(dat$date, format = "%Y-%m-%d")
+save(dat, file = "data/raw.rds")
+```
+
+```{r data load, eval=TRUE}
+load("data/raw.rds")
+```
