@@ -2,15 +2,15 @@
   {
     "objectID": "index.html#quarto",
     "href": "index.html#quarto",
-    "title": "Quarto - Reportes online",
+    "title": "Reportes online con Quarto",
     "section": "Quarto",
     "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see:\nhttps://quarto.org\nhttps://openscapes.github.io/quarto-website-tutorial/"
   },
   {
     "objectID": "index.html#running-code",
     "href": "index.html#running-code",
-    "title": "Quarto - Reportes online",
+    "title": "Reportes online con Quarto",
     "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\ndat %>% head\n\n  year month julian       date tmax tmin rain hr\n1 1971     1      1 1971-01-01 29.6  5.4  0.0 54\n2 1971     1      2 1971-01-02 32.2 16.4  0.0 47\n3 1971     1      3 1971-01-03 30.6 14.4  7.4 59\n4 1971     1      4 1971-01-04 25.2 12.8  0.0 63\n5 1971     1      5 1971-01-05 30.4  8.2  0.0 48\n6 1971     1      6 1971-01-06 24.8 15.4  0.0 69\n\n\n\n\n\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\ndat %>% head\n\n  year month julian       date tmax tmin rain hr\n1 1971     1      1 1971-01-01 29.6  5.4  0.0 54\n2 1971     1      2 1971-01-02 32.2 16.4  0.0 47\n3 1971     1      3 1971-01-03 30.6 14.4  7.4 59\n4 1971     1      4 1971-01-04 25.2 12.8  0.0 63\n5 1971     1      5 1971-01-05 30.4  8.2  0.0 48\n6 1971     1      6 1971-01-06 24.8 15.4  0.0 69\n\n\n\n\n\n\n\nThe echo: false option disables the printing of code (only output is displayed).\nThis extension allows you to use font-awesome icons in your Quarto HTML and PDF documents. It provides an {{< fa >}} shortcode:\n\nMandatory <icon-name>:\n{{< fa <icon-name> >}}\nOptional <group>, <size=...>, and <title=...>:\n{{< fa <group> <icon-name> <size=...> <title=...> >}}\n\nFor example:\n\n\n\n\n\n\n\nShortcode\nIcon\n\n\n\n\n{{< fa thumbs-up >}}\n\n\n\n{{< fa folder >}}\n\n\n\n{{< fa chess-pawn >}}\n\n\n\n{{< fa brands bluetooth >}}\n\n\n\n{{< fa brands twitter size=2xl >}} (HTML only)\n\n\n\n{{< fa brands github size=5x >}} (HTML only)\n\n\n\n{{< fa battery-half size=Huge >}}\n\n\n\n{{< fa envelope title=\"An envelope\" >}}"
   }
 ]

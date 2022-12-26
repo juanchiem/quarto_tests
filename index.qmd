@@ -6,6 +6,7 @@ subtitle: "Ultima actualizacion: `r format(Sys.time(), '%d/%m/%y')`"
 ```{r setup, child=c('setup.Rmd')}
 ```
 
+
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see: 
@@ -35,3 +36,30 @@ dat %>%
 
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+This extension allows you to use font-awesome icons in your Quarto HTML and PDF documents.
+It provides an `{{{< fa >}}}` shortcode:
+
+- Mandatory `<icon-name>`:
+  ``` markdown
+  {{{< fa <icon-name> >}}}
+  ```
+
+- Optional `<group>`, `<size=...>`, and `<title=...>`:
+  ``` markdown
+  {{{< fa <group> <icon-name> <size=...> <title=...> >}}}
+  ```
+
+For example:
+
+| Shortcode                                          | Icon                                      |
+| -------------------------------------------------- | ----------------------------------------- |
+| `{{{< fa thumbs-up >}}}`                           | {{< fa thumbs-up >}}                      |
+| `{{{< fa folder >}}}`                              | {{< fa folder >}}                         |
+| `{{{< fa chess-pawn >}}}`                          | {{< fa chess-pawn >}}                     |
+| `{{{< fa brands bluetooth >}}}`                    | {{< fa brands bluetooth >}}               |
+| `{{{< fa brands twitter size=2xl >}}}` (HTML only) | {{< fa brands twitter size=2xl >}}        |
+| `{{{< fa brands github size=5x >}}}` (HTML only)   | {{< fa brands github size=5x >}}          |
+| `{{{< fa battery-half size=Huge >}}}`              | {{< fa battery-half size=Huge >}}         |
+| `{{{< fa envelope title="An envelope" >}}}`        | {{< fa envelope title="An envelope" >}}   |
+
